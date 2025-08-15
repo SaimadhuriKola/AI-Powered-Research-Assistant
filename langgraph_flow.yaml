@@ -1,0 +1,21 @@
+name: research_pipeline
+nodes:
+  - id: ingest_pdf
+    type: python
+    func: src.ingestor.pdf_ingest.ingest_pdf
+  - id: embed
+    type: python
+    func: src.store.vector_store.embed_documents
+  - id: index
+    type: python
+    func: src.store.vector_store.index_documents
+  - id: summarize
+    type: python
+    func: src.agent.summarizer.summarize_documents
+edges:
+  - from: ingest_pdf
+    to: embed
+  - from: embed
+    to: index
+  - from: index
+    to: summarize

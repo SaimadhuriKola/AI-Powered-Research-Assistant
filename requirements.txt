@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+langchain>=0.1
+langgraph
+chromadb
+faiss-cpu
+python-dotenv
+requests
+pydantic
+pytest
+gunicorn
+langchain_google_genai
