@@ -1,2 +1,3 @@
 # AI-Powered-Research-Assistant
-Developed an intelligent research assistant to streamline and accelerate the academic research process, enabling efficient knowledge discovery and management.
+Developed an intelligent research assistant to accelerate the academic research process, enabling efficient knowledge discovery and management.
+This repository contains an AI-powered research assistant built with FastAPI, LangChain, and Gemini. It provides modular components for document ingestion, vector storage, retrieval, and agent orchestration, enabling efficient academic research and knowledge management. The assistant supports advanced search augmentation using the SERP API and offers a configurable LLM layer. Users can interact with the system via a FastAPI endpoint for question answering. The project is organized for scalability and ease of integration with cloud or local storage solutions.
